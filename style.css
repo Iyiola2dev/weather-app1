@@ -10,7 +10,7 @@
 body{
     background: #222;
 }
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
     .card {
         width: 95%;
         max-width: 320px;
@@ -48,7 +48,7 @@ body{
 
 
 
-@media (max-width: 599px) {
+@media (min-width: 599px) {
     .card{
         width: 90%;
         max-width: 470px;
@@ -140,7 +140,7 @@ body{
     }
 }
 
-/* mobile view */
+
 @media (min-width: 600px){
     .card{
         width: 90%;
@@ -322,4 +322,204 @@ body{
     margin-top: -6px;
 }
 
+} */
+
+
+/* Base styles */
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 0px;
+    height: 50px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 3px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search button img {
+    width: 13px;
+}
+
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.humidity, .wind {
+    font-size: 25px;
+    margin-top: -6px;
+}
+
+/* Extra small devices (up to 360px) */
+@media (max-width: 360px) {
+    .card {
+        width: 95%;
+        max-width: 320px;
+        padding: 30px 8px;
+    }
+    
+    .search input {
+        font-size: 16px;
+        padding: 8px 0px;
+    }
+    
+    .weather-icon {
+        width: 150px;
+        margin-top: 20px;
+    }
+    
+    .weather h1 {
+        font-size: 40px;
+    }
+    
+    .weather h2 {
+        font-size: 18px;
+    }
+    
+    .details {
+        gap: 0.5rem;
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+    
+    .humidity, .wind {
+        font-size: 20px;
+    }
+}
+
+/* Small devices (up to 599px) */
+@media (max-width: 599px) {
+    /* Base styles applied */
+}
+
+/* Medium devices (600px to 899px) */
+@media (min-width: 600px) and (max-width: 899px) {
+    .card {
+        width: 80%;
+        max-width: 550px;
+        padding: 50px 20px;
+    }
+    
+    .weather h1 {
+        font-size: 60px;
+    }
+    
+    .weather h2 {
+        font-size: 24px;
+    }
+    
+    .details {
+        gap: 1rem;
+        margin-top: 60px;
+    }
+}
+
+/* Large devices (900px to 1199px) */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .card {
+        width: 70%;
+        max-width: 700px;
+        padding: 60px 30px;
+    }
+    
+    .weather h1 {
+        font-size: 70px;
+    }
+    
+    .weather h2 {
+        font-size: 28px;
+    }
+    
+    .details {
+        gap: 1.2rem;
+        margin-top: 70px;
+    }
+}
+
+/* Extra large devices (1200px and above) */
+@media (min-width: 1200px) {
+    .card {
+        width: 60%;
+        max-width: 900px;
+        padding: 70px 40px;
+    }
+    
+    .weather h1 {
+        font-size: 80px;
+    }
+    
+    .weather h2 {
+        font-size: 32px;
+    }
+    
+    .details {
+        gap: 1.5rem;
+        margin-top: 80px;
+    }
 }
