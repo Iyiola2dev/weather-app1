@@ -10,6 +10,43 @@
 body{
     background: #222;
 }
+@media (max-width: 360px) {
+    .card {
+        width: 95%;
+        max-width: 320px;
+        padding: 30px 8px;
+    }
+
+    .search input {
+        font-size: 16px;
+        padding: 8px 0px;
+    }
+
+    .weather-icon {
+        width: 150px;
+        margin-top: 20px;
+    }
+
+    .weather h1 {
+        font-size: 40px;
+    }
+
+    .weather h2 {
+        font-size: 18px;
+    }
+
+    .details {
+        gap: 0.5rem;
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+
+    .humidity, .wind {
+        font-size: 20px;
+    }
+}
+
+
 
 @media (max-width: 599px) {
     .card{
@@ -103,7 +140,7 @@ body{
     }
 }
 
-
+/* mobile view */
 @media (min-width: 600px){
     .card{
         width: 90%;
